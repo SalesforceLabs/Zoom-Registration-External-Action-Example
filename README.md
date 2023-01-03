@@ -1,1 +1,1 @@
-# Zoom-Registration-External-Action-Example
+# Zoom Registration External Action Example

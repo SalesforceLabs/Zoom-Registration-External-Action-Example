@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ZoomApiRequest</members>
+        <members>ZoomApiRequestMockCallout</members>
+        <members>ZoomApiRequestTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Zoom_Example</members>
+        <name>AuthProvider</name>
+    </types>
+    <types>
+        <members>Zoom_Named_Cred</members>
+        <name>NamedCredential</name>
+    </types>
+    <types>
+        <members>Zoom_Extension</members>
+        <name>MarketingAppExtension</name>
+    </types>
+    <version>56.0</version>
+</Package>

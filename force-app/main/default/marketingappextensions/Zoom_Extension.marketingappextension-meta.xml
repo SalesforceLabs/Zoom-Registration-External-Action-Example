@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MarketingAppExtension xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <marketingAppExtActions>
+        <actionName>Add Webinar Registrant</actionName>
+        <actionParams>{
+  &quot;isStandard&quot;: false,
+  &quot;type&quot;: &quot;apex&quot;
+}</actionParams>
+        <actionSchema>{
+  &quot;properties&quot;: {
+    &quot;email&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;email&quot;,
+      &quot;value&quot;: &quot;{{Recipient.Email}}&quot;
+    },
+    &quot;firstName&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;firstName&quot;,
+      &quot;value&quot;: &quot;{{Recipient.FirstName}}&quot;
+    },
+    &quot;lastName&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;lastName&quot;,
+      &quot;value&quot;: &quot;{{Recipient.LastName}}&quot;
+    },
+    &quot;webinarId&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;title&quot;: &quot;webinarId&quot;,
+      &quot;value&quot;: &quot;&lt;Enter Webinar ID&gt;&quot;
+    }
+  },
+  &quot;view&quot;: {
+    &quot;components&quot;: [
+      {
+        &quot;definition&quot;: &quot;lightning/control&quot;,
+        &quot;scope&quot;: &quot;#/properties/webinarId&quot;
+      }
+    ]
+  },
+  &quot;required&quot;: [
+    &quot;email&quot;,
+    &quot;firstName&quot;,
+    &quot;lastName&quot;,
+    &quot;webinarId&quot;
+  ]
+}</actionSchema>
+        <actionSelector>MktgExtAction__ZoomApiRequest</actionSelector>
+        <apiName>Adds_Webinars_Registrants</apiName>
+        <isActive>false</isActive>
+        <marketingAppExtension
+    >MktgExtAction__Zoom_Extension</marketingAppExtension>
+    </marketingAppExtActions>
+    <masterLabel>Zoom Extension</masterLabel>
+</MarketingAppExtension>
